@@ -1,0 +1,123 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.content-container {
+  word-wrap: break-word;
+  text-align: left;
+  flex: 2;
+}
+
+.main-container {
+  display: flex;
+}
+
+.spacer {
+  flex: 1;
+}
+
+
+.deal-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.deal-list > a {
+  width: 850px;
+  margin-bottom: 100px;
+  margin-left: -40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer > * {
+  margin-right: 100px;
+  text-decoration: none;
+  color: black;
+} 
+
+.popup-container {
+  position: relative;
+}
+
+.popup {
+  z-index: 3;
+  position: absolute;
+  left: 37.5%;
+  bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(128, 0, 0, 1);
+}
+
+.down-arrow {
+  position: relative;
+  left: 145px;
+  box-shadow: 5px 5px 5px rgba(128, 0, 0, 1);
+  background-color: white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 15px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: -30px;
+}
+
+.go-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.popup-input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.popup-add {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.popup-sub {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+
+}
+
+.popup > * {
+  margin-bottom: 10px;
+}
+
+
+.close-search {
+  position: relative;
+}
+
+.open-search {
+  animation: pos;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+
+}
+
+.search-btn {
+  height: 50px;
+}
+
+@keyframes pos {
+  from {
+    position: relative;
+  }
+  to{
+    position: absolute;
+  }
+}

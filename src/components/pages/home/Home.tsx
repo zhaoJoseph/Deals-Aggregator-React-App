@@ -40,7 +40,7 @@ const Home = () => {
 
     const [nextPageNum, setNextPageNum] = useState<number | string>(0);
 
-    const [openSearch, toggleSearch] = useState(false);
+    const [openSearch, toggleSearch] = useState(true);
 
     const [value, setValue] = useState<readonly Option[]>([]);
 

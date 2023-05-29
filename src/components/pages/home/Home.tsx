@@ -72,8 +72,8 @@ const Home = () => {
                 if(res.data) {
                     const result: { title: string; url: string }[] = [];
                     for (let i = 0; i < res.data.rows.length; i++) {
-                        const title: string = res.data.rows[i].title;
-                        const url: string = res.data.rows[i].url;
+                        const title: string = decodeURIComponent(res.data.rows[i].title);
+                        const url: string = decodeURIComponent(res.data.rows[i].url);
                         result.push({ title, url });
                     }
                     setPosts(result);
@@ -92,8 +92,8 @@ const Home = () => {
                 if (res.rows) {
                     const result: { title: string; url: string }[] = [];
                     for (let i = 0; i < res.rows.length; i++) {
-                        const title: string = res.rows[i].title;
-                        const url: string = res.rows[i].url;
+                        const title: string = decodeURIComponent(res.rows[i].title);
+                        const url: string = decodeURIComponent(res.rows[i].url);
                         result.push({ title, url });
                     }
                     setPosts(result);

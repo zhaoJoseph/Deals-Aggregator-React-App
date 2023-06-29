@@ -11,15 +11,21 @@ const getTotal = async () => {
     return res.data;
 }
 
-const searchPosts = async (list, pageNum) => {
-    const res = await axios.get(`${ENDPOINTS.POST_SEARCH}?searchParams=${list}&pageNum=${pageNum}`)
+const searchPosts = async (list, urls, pageNum) => {
+    const res = await axios.get(`${ENDPOINTS.POST_SEARCH}?searchParams=${list}&urlParams=${urls}&pageNum=${pageNum}`)
+    return res.data;
+}
+
+const getBuild = async () => {
+    const res = await axios.get(`${ENDPOINTS.GET_TIME}`)
     return res.data;
 }
 
 const postServices = {
     getPost,
     getTotal,
-    searchPosts
+    searchPosts,
+    getBuild
 }
 
 export default postServices;

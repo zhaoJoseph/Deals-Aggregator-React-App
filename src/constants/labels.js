@@ -1,6 +1,6 @@
 export const LABELS = {
     main_title: {
-        title: 'Internet Deals',
+        title: '100+ Internet Deals',
         subtitle: 'Deals about games, electronics and shopping around the internet'
     }
 }
